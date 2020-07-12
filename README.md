@@ -5,6 +5,7 @@ Javascript is 16 times faster than Dart when streaming 5MB jpg file at 65KB bloc
 ## Setup
 
 npm install
+
 flutter pub get
 
 ## Run node server
