@@ -13,7 +13,7 @@ npm install
 
 flutter pub get
 
-## Run node server
+## Run node stream server
 
 node stream-server.js
 
