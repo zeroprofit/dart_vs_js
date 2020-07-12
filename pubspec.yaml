@@ -1,0 +1,12 @@
+name: Scratch
+description: Developer scratch area
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  socket_io: ^0.9.3
+  socket_io_client:
+  adhara_socket_io: ^0.4.2+1
