@@ -37,6 +37,18 @@ io.on('connection', (socket) => {
     // console.log('No conversion');
   });
 
+  socket.on('UPLOAD_FULL', (data) => {
+    fs.writeFile('out.jpg', data);
+    console.log('Length: ' + data.length);
+    socket.emit('UPLOAD_END');
+  });
+
+  socket.on('UPLOAD_FULL_DART', (data) => {
+    console.log('Length: ' + data.length);
+    fs.writeFile('out.jpg', Buffer.from(data));
+    socket.emit('UPLOAD_END');
+  });
+
 });
 
 io.listen(8000);
