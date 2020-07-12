@@ -28,7 +28,7 @@ main() async {
   
   print(prop);
   
-  socket.emit('UPLOAD_FULL_DART', d);
+  socket.emitWithBinary('UPLOAD_FULL_DART', d);
 
   socket.on('UPLOAD_END', (data) {   
     print('UPLOAD_END');
@@ -38,7 +38,7 @@ main() async {
     print('Language: DART');
     print('Stream block size: 65 * 1024');
     print('Size in bytes: ' + prop['size'].toString());
-    print('Elasped in ms:  ' + elapsed.toString());
+    print('Elapsed in ms:  ' + elapsed.toString());
   });
 
 }

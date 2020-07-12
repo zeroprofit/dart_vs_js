@@ -34,7 +34,7 @@ socket.on('connect', (s) {
     prop['chunk'] = data;
     prop['start'] = prop['start'] + data.length;
     print('Progress: ' + (prop['start'] / prop['size'] * 100).toString() );
-    socket.emit('UPLOAD_DART', prop);
+    socket.emitWithBinary('UPLOAD_DART', prop);
   }, onDone: () => socket.emit('UPLOAD_END'));
 
 });
