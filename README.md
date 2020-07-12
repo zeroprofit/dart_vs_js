@@ -15,22 +15,19 @@ node stream-server.js
 ## Run Javascript stream client
 
 node stream-client.js
+```
+Stream block size: 65 * 1024
+Size in bytes: 5186254
+Elapsed in ms: 534
+```
 
 ## Run Dart stream client
 
 dart stream-client.dart
-
-## Results
-Dart
 ```
 Stream block size: 65 * 1024
 Size in bytes: 5186254
 Elasped in ms:  11141
 ```
 
-Javascript
-```
-Stream block size: 65 * 1024
-Size in bytes: 5186254
-Elapsed in ms: 534
-```
+
