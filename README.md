@@ -21,18 +21,26 @@ node stream-server.js
 
 node stream-client.js
 ```
-Stream block size: 65 * 1024
-Size in bytes: 5186254
-Elapsed in ms: 534
+Language: JAVSCRIPT
+Size in bytes: 68780375
+Elapsed in ms: 4458
 ```
 
 ## Run Dart stream client
 
 dart stream-client.dart
 ```
-Stream block size: 65 * 1024
-Size in bytes: 5186254
-Elasped in ms:  3101
+Language: DART (emitWithBinary)
+Size in bytes: 68780375
+Elapsed in ms:  29709
 ```
 
+## Run BASH transfer via nc
+
+./client.sh
+```
+Language: BASH (nc)
+Size in bytes: 68780375
+Elapsed in ms: 904
+```
 
